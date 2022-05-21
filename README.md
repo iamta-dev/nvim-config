@@ -24,6 +24,6 @@ nvim init.vim
 <div align="center"><img width="600" src="./markdown/iterm2-keymap.png"></div>
 
 ## document
- - (https://github.com/junegunn/vim-plug)[https://github.com/junegunn/vim-plug]
- - (https://github.com/neoclide/coc-snippets)[https://github.com/neoclide/coc-snippets]
-
+ - [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+ - [https://github.com/neoclide/coc-snippets](https://github.com/neoclide/coc-snippets)
+ - [https://github.com/taZgg/vim-snippets](https://github.com/taZgg/vim-snippets)
