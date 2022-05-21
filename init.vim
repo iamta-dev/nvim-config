@@ -32,6 +32,8 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'xiyaowong/nvim-transparent'
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 
 set encoding=UTF-8
 

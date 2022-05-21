@@ -27,3 +27,4 @@ nvim init.vim
  - [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
  - [https://github.com/neoclide/coc-snippets](https://github.com/neoclide/coc-snippets)
  - [https://github.com/taZgg/vim-snippets](https://github.com/taZgg/vim-snippets)
+ - [https://github.com/romgrk/barbar.nvim#install](https://github.com/romgrk/barbar.nvim#install)
