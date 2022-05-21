@@ -25,6 +25,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'morhetz/gruvbox'
+"Plug 'sickill/vim-monokai'
+"Plug 'sainnhe/gruvbox-material'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'xiyaowong/nvim-transparent'
@@ -85,6 +87,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
+"set background=dark
 colorscheme gruvbox
 
 " sync open file with NERDTree
