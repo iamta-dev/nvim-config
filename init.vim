@@ -35,22 +35,52 @@ Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
+" Initialize plugin system                                                           
+call plug#end()  
+
 set encoding=UTF-8
 
-" Initialize plugin system                                                           
-call plug#end()                                                                      
-                                                                                     
 inoremap jk <ESC>                                                                    
 "nmap <C-n> :NERDTreeToggle<CR>                                                      
 
 map <C-c> "+y
+map <C-a> :%y+<CR>
 nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+"nnoremap <C-t> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
 " 'xiyaowong/nvim-transparent'
 let g:transparent_enabled = v:true
+
+"'romgrk/barbar.nvim'
+" Enable/disable auto-hiding the tab bar when there is a single buffer
+"let bufferline.auto_hide = v:true
+
+"" Sets the icon's highlight group.
+"" If false, will use nvim-web-devicons colors
+"let bufferline.icon_custom_colors = v:true
+
+"" Configure icons on the bufferline.
+"let bufferline.icon_separator_active = '▎'
+"let bufferline.icon_separator_inactive = '▎'
+"let bufferline.icon_close_tab = ''
+"let bufferline.icon_close_tab_modified = '●'
+"let bufferline.icon_pinned = '車'
+
+" Move to previous/next
+nnoremap <silent>    , :BufferPrevious<CR>
+nnoremap <silent>    . :BufferNext<CR>
+" Re-order to previous/next
+"nnoremap <silent>    <C-,> :BufferMovePrevious<CR>
+"nnoremap <silent>    <C-.> :BufferMoveNext<CR>
+" Goto buffer in position...
+nnoremap <silent>    < :BufferGoto 1<CR>
+nnoremap <silent>    > :BufferGoto -1<CR>
+" Pin/unpin buffer
+nnoremap <silent>    <C-t> :BufferPin<CR>
+" Close buffer
+nnoremap <silent>    q :BufferClose<CR>
 
 " open NERDTree automatically
 "autocmd StdinReadPre * let s:std_in=1
